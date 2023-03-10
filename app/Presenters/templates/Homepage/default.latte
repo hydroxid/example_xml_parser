@@ -1,0 +1,20 @@
+{block content}
+<div class="row">
+	<div class="col-12 my-5">
+		<h1>Total items: {$rows['total']}</h1>
+	</div>
+
+	{foreach $rows['items'] as $item}
+		<div class="col-12">
+			<h2>{$item['name']}</h2>
+			{if $item['parts']}
+				<p>Parts</p>
+				<ul>
+					{foreach $item['parts'] as $part}
+						<li>{$part}</li>
+					{/foreach}
+				</ul>
+			{/if}
+		</div>
+	{/foreach}
+</div>
