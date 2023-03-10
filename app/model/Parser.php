@@ -54,9 +54,10 @@ class Parser
     /**
     * get parts if exists
     *
+    * @param \SimpleXMLElement $parts
     * @author hydroxid
     */
-    public function getParts($parts) : ?array
+    public function getParts(\SimpleXMLElement $parts) : ?array
     {
         $result = null;
         if ($parts && $parts->part && $parts->part->item) {
