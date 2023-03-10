@@ -11,7 +11,6 @@ use Nette;
 */
 class Parser
 {
-
     public const FILE = 'files/export_full.xml';
 
     /**
